@@ -16,7 +16,7 @@ class Categoria extends Model
         'nome'
     ];
 
-    // RELACIONAMENTO 1:N (uma categoria tem muitas tarefas)
+    //  1:N  pq uma categoria tem muitas tarefas
     public function tarefas()
     {
         return $this->hasMany(Tarefa::class, 'categoria_id');
